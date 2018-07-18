@@ -1,0 +1,45 @@
+
+<!DOCTYPE html><html lang='en' >
+<head>
+
+<meta charset='UTF-8'>
+
+<title> MP3 Player </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+ 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+</head>  
+ 
+ <body>
+
+ <div class="container">
+<div class = "z-depth-3" id="mp3Player">
+  <div id="lcd" > Retro MP3 Player</div>
+  <audio id="audio">
+  <source id="source" src="" type="audio/mpeg">
+  </audio>
+  <div class="controls">
+    <button onclick="prevTrack()" id="pt"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+    <button onclick="play()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button onclick="pauseAudio()" id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <button onclick="nextTrack()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  </div>
+</div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="main.js"></script>
+
+</body></html>
